@@ -1,4 +1,4 @@
-﻿namespace IEvangelist.Battleship.Emulator
+﻿namespace IEvangelist.Battleship.Emulator.Interfaces
 {
     public interface IRoundExecutor
     {

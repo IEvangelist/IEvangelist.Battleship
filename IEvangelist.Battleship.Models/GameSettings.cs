@@ -1,19 +1,19 @@
-﻿namespace IEvangelist.Battleship.GameEngine
+﻿namespace IEvangelist.Battleship.Models
 {
     public class GameSettings
     {
-        public int AircraftCarrierCount { get; set; } = 1;
+        public byte AircraftCarrierCount { get; set; } = 1;
 
-        public int CrusierCount { get; set; } = 1;
+        public byte CrusierCount { get; set; } = 1;
 
-        public int DestroyerCount { get; set; } = 2;
+        public byte DestroyerCount { get; set; } = 2;
 
-        public int SubmarineCount { get; set; } = 2;
+        public byte SubmarineCount { get; set; } = 2;
 
-        public int BattelshipCount { get; set; } = 1;
+        public byte BattelshipCount { get; set; } = 1;
 
-        public int GridSize { get; set; } = 10;
+        public byte GridSize { get; set; } = 10;
 
-        public int NumberOfPlayers { get; set; } = 2;
+        public byte NumberOfPlayers { get; set; } = 2;
     }
 }
