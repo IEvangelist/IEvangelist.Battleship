@@ -3,7 +3,7 @@ using IEvangelist.Battleship.Models.Enums;
 
 namespace IEvangelist.Battleship.Models
 {
-    public class Carrier : Ship
+    public class AircraftCarrier : Ship
     {
         public override ShipClass Classification { get; } = ShipClass.AircraftCarrier;
 
@@ -11,6 +11,6 @@ namespace IEvangelist.Battleship.Models
 
         public override bool IsHit => throw new NotImplementedException();
 
-        public override int Size => throw new NotImplementedException();
+        public override int Size { get; } = 5;
     }
 }

@@ -11,6 +11,6 @@ namespace IEvangelist.Battleship.Models
 
         public override bool IsHit => throw new NotImplementedException();
 
-        public override int Size => throw new NotImplementedException();
+        public override int Size { get; } = 2;
     }
 }
