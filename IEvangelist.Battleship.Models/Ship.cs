@@ -12,6 +12,8 @@ namespace IEvangelist.Battleship.Models
 
         public abstract int Size { get; }
 
-        public Position Position { get; }
+        public Position Position { get; private set; }
+
+        public void Place(Position position) => Position = position;
     }
 }
