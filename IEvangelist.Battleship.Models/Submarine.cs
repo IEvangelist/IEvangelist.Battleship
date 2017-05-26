@@ -1,5 +1,4 @@
-﻿using System;
-using IEvangelist.Battleship.Models.Enums;
+﻿using IEvangelist.Battleship.Models.Enums;
 
 namespace IEvangelist.Battleship.Models
 {
@@ -7,10 +6,6 @@ namespace IEvangelist.Battleship.Models
     {
         public override ShipClass Classification { get; } = ShipClass.Submarine;
 
-        public override bool IsSank => throw new NotImplementedException();
-
-        public override bool IsHit => throw new NotImplementedException();
-
-        public override int Size { get; } = 3;
+        public override byte Size { get; } = 3;
     }
 }

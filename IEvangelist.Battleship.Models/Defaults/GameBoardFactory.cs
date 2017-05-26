@@ -12,7 +12,7 @@ namespace IEvangelist.Battleship.Models.Defaults
             _shipFactory = shipFactory ?? throw new ArgumentNullException(nameof(shipFactory));
         }
 
-        public GameBoard CreateBoard(Player player, GameSettings settings)
+        public GameBoard CreateBoard(IPlayer player, GameSettings settings)
             => new GameBoard(player, settings, _shipFactory);
     }
 }

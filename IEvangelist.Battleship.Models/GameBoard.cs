@@ -8,7 +8,7 @@ namespace IEvangelist.Battleship.Models
     {
         public Guid Identifer { get; } = Guid.NewGuid();
 
-        public Player Player { get; }
+        public IPlayer Player { get; }
 
         public List<Ship> Ships { get; } = new List<Ship>();
 
@@ -25,7 +25,7 @@ namespace IEvangelist.Battleship.Models
         /// </summary>
         public Grid TrackingGrid { get; }
 
-        internal GameBoard(Player player, 
+        internal GameBoard(IPlayer player, 
                            GameSettings settings, 
                            IShipFactory shipFactory)
         {

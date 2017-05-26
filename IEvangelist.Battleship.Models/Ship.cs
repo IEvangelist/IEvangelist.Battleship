@@ -5,12 +5,8 @@ namespace IEvangelist.Battleship.Models
     public abstract class Ship
     {
         public abstract ShipClass Classification { get; }
-
-        public abstract bool IsSank { get; }
-
-        public abstract bool IsHit { get; }
-
-        public abstract int Size { get; }
+        
+        public abstract byte Size { get; }
 
         public Position Position { get; private set; }
 

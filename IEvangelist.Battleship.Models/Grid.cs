@@ -1,4 +1,5 @@
 ﻿using IEvangelist.Battleship.Models.Enums;
+using IEvangelist.Battleship.Models.Extensions;
 
 namespace IEvangelist.Battleship.Models
 {
@@ -29,5 +30,8 @@ namespace IEvangelist.Battleship.Models
                 }
             }
         }
+
+        public CellState HandleShot(Ship ship, Shot shot) 
+            => _shotGrid[shot.Row, shot.Column] = ship.CalculateShot(shot);
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IGameBoardFactory
     {
-        GameBoard CreateBoard(Player player, GameSettings settings);
+        GameBoard CreateBoard(IPlayer player, GameSettings settings);
     }
 }

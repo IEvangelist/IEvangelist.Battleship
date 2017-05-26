@@ -17,8 +17,8 @@ namespace IEvangelist.Battleship.Emulator
             _settings = options?.Value ?? throw new ArgumentNullException(nameof(options));
         }
 
-        public Game Start(Player playerOne,
-                          Player playerTwo)
+        public Game Start(IPlayer playerOne,
+                          IPlayer playerTwo)
             => new Game(_gameBoardFactory.CreateBoard(playerOne, _settings),
                         _gameBoardFactory.CreateBoard(playerTwo, _settings));
     }
