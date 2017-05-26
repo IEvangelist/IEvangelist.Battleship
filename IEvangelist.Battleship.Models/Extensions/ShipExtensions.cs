@@ -20,14 +20,14 @@ namespace IEvangelist.Battleship.Models.Extensions
 
                 if (pRow == shot.Row &&
                     position.Alignment == ShipAlignment.Horizontal &&
-                    pCol - ship.Size <= 0)
+                    pCol + ship.Size > shot.Column)
                 {
                     return CellState.Hit;
                 }
 
                 if (pCol == shot.Column &&
                     position.Alignment == ShipAlignment.Vertical &&
-                    pRow - ship.Size <= 0)
+                    pRow + ship.Size > shot.Row)
                 {
                     return CellState.Hit;
                 }
